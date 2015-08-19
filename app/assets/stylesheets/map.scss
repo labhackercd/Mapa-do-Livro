@@ -1,7 +1,37 @@
-
 #svg-map text { fill:#fff; font:12px Arial-BoldMT, sans-serif; cursor:pointer }
 #svg-map a{ text-decoration:none }
 #svg-map a:hover { cursor:pointer; text-decoration:none }
-#svg-map a:hover path{ fill:#003399 !important }
+#svg-map a:hover path{ fill:#3899cb !important }
 #svg-map .circle { fill:#66ccff }
 #svg-map a:hover .circle { fill:#003399 !important; cursor:pointer }
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  margin-left: 100px;
+  margin-right: 100px;
+  .info {
+    min-height: 846px;
+    .collection {
+      width: 100%;
+      display: none;
+    }
+  }
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+#svg-map {
+  margin-top: 50px;
+}
