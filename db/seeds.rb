@@ -1,3 +1,4 @@
+## Estados
 # Tocantins
 
 Estado.create(:nome => "Tocantins", :sigla => "TO", :shape_description => "M289.558,235.641
@@ -318,3 +319,291 @@ Estado.create(:nome => "Paraíba", :sigla => "PB", :shape_description => "M401.5
         C405.574,150.776,400.398,142.889,401.575,141.096z", :text_position => "matrix(1 0 0 1 425.2129 148.9893)",
               :has_circle => true, :circle_shape => "M433.797,133.597c6.237,0,11.26,5.051,11.26,11.261c0,6.226-5.022,11.262-11.26,11.262
         c-6.208,0-11.257-5.036-11.257-11.262C422.54,138.647,427.589,133.597,433.797,133.597z")
+
+
+## Indicadores
+
+
+# IDEB 4 série
+
+Indicador.create([
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "ideb_4s", :valor => 5.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "ideb_4s", :valor => 4.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "ideb_4s", :valor => 4.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "ideb_4s", :valor => 4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "ideb_4s", :valor => 4.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "ideb_4s", :valor => 5.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "ideb_4s", :valor => 5.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "ideb_4s", :valor => 5.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "ideb_4s", :valor => 5.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "ideb_4s", :valor => 4.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "ideb_4s", :valor => 6.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "ideb_4s", :valor => 5.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "ideb_4s", :valor => 5.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "ideb_4s", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "ideb_4s", :valor => 4.5},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "ideb_4s", :valor => 4.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "ideb_4s", :valor => 4.5},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "ideb_4s", :valor => 5.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "ideb_4s", :valor => 5.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "ideb_4s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "ideb_4s", :valor => 5.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "ideb_4s", :valor => 5.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "ideb_4s", :valor => 5.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "ideb_4s", :valor => 6.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "ideb_4s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "ideb_4s", :valor => 6.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "ideb_4s", :valor => 5.1}])
+
+
+
+# IDEB 8 série
+
+Indicador.create([
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "ideb_8s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "ideb_8s", :valor => 3.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "ideb_8s", :valor => 3.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "ideb_8s", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "ideb_8s", :valor => 3.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "ideb_8s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "ideb_8s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "ideb_8s", :valor => 4.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "ideb_8s", :valor => 4.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "ideb_8s", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "ideb_8s", :valor => 4.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "ideb_8s", :valor => 4.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "ideb_8s", :valor => 4.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "ideb_8s", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "ideb_8s", :valor => 3.5},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "ideb_8s", :valor => 3.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "ideb_8s", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "ideb_8s", :valor => 4.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "ideb_8s", :valor => 4.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "ideb_8s", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "ideb_8s", :valor => 3.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "ideb_8s", :valor => 3.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "ideb_8s", :valor => 4.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "ideb_8s", :valor => 4.5},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "ideb_8s", :valor => 3.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "ideb_8s", :valor => 4.7},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "ideb_8s", :valor => 3.9}])
+
+# IDEB 3 ano ensino médio
+
+Indicador.create([
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "ideb_3m", :valor => 3.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "ideb_3m", :valor => 3.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "ideb_3m", :valor => 3.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "ideb_3m", :valor => 3.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "ideb_3m", :valor => 3.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "ideb_3m", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "ideb_3m", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "ideb_3m", :valor => 3.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "ideb_3m", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "ideb_3m", :valor => 3.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "ideb_3m", :valor => 3.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "ideb_3m", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "ideb_3m", :valor => 3.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "ideb_3m", :valor => 2.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "ideb_3m", :valor => 3.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "ideb_3m", :valor => 3.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "ideb_3m", :valor => 3.3},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "ideb_3m", :valor => 3.8},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "ideb_3m", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "ideb_3m", :valor => 3.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "ideb_3m", :valor => 3.6},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "ideb_3m", :valor => 3.4},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "ideb_3m", :valor => 3.9},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "ideb_3m", :valor => 4.0},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "ideb_3m", :valor => 3.2},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "ideb_3m", :valor => 4.1},
+                     {:nome => "IDEB", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "ideb_3m", :valor => 3.3}])
+
+
+# Recursos 5 ano
+
+Indicador.create([
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_4s", :valor => 12.98},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_4s", :valor => 12.89},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_4s", :valor => 13.50},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_4s", :valor => 14.27},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_4s", :valor => 12.78},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_4s", :valor => 12.05},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_4s", :valor => 12.13},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_4s", :valor => 11.88},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_4s", :valor => 11.24},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_4s", :valor => 13.91},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_4s", :valor => 11.17},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_4s", :valor => 10.76},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_4s", :valor => 11.39},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_4s", :valor => 14.10},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_4s", :valor => 13.66},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_4s", :valor => 13.33},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_4s", :valor => 13.29},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_4s", :valor => 11.01},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_4s", :valor => 11.22},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_4s", :valor => 13.58},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_4s", :valor => 12.01},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_4s", :valor => 13.58},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_4s", :valor => 11.19},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_4s", :valor => 17.47},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_4s", :valor => 11.79},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_4s", :valor => 10.69},
+                     {:nome => "Recursos médios por estudante do 5 ano", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_4s", :valor => 12.59}])
+
+
+# Recursos médios por 9 ano
+
+Indicador.create([
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_8s", :valor => 19.61},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_8s", :valor => 16.26},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_8s", :valor => 17.21},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_8s", :valor => 15.42},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_8s", :valor => 18.63},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_8s", :valor => 17.60},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_8s", :valor => 15.58},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_8s", :valor => 15.73},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_8s", :valor => 15.43},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_8s", :valor => 18.82},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_8s", :valor => 14.72},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_8s", :valor => 16.29},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_8s", :valor => 16.24},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_8s", :valor => 17.91},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_8s", :valor => 16.41},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_8s", :valor => 16.29},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_8s", :valor => 17.26},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_8s", :valor => 11.19},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_8s", :valor => 13.72},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_8s", :valor => 16.92},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_8s", :valor => 16.13},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_8s", :valor => 17.40},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_8s", :valor => 12.47},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_8s", :valor => 14.38},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_8s", :valor => 16.73},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_8s", :valor => 14.33},
+                     {:nome => "Recursos médios por estudante do 9 ano", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_8s", :valor => 17.69}])
+
+
+# Recursos médio para o estudante do terceiro ano do ensino médio
+
+Indicador.create([
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_3m", :valor => 78.04},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_3m", :valor => 75.85},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_3m", :valor => 74.42},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_3m", :valor => 78.51},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_3m", :valor => 76.97},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_3m", :valor => 78.90},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_3m", :valor => 86.98},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_3m", :valor => 80.00},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_3m", :valor => 78.01},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_3m", :valor => 76.47},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_3m", :valor => 77.58},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_3m", :valor => 77.23},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_3m", :valor => 77.95},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_3m", :valor => 77.68},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_3m", :valor => 78.50},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_3m", :valor => 77.33},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_3m", :valor => 77.85},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_3m", :valor => 73.85},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_3m", :valor => 78.66},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_3m", :valor => 80.11},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_3m", :valor => 76.59},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_3m", :valor => 75.72},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_3m", :valor => 79.50},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_3m", :valor => 75.78},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_3m", :valor => 80.15},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_3m", :valor => 78.12},
+                     {:nome => "Recursos médios por estudante do 3 ano do ensino medio", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_3m", :valor => 78.20}])
+
+
+Indicador.create([
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_ideb_4s", :valor => 0.39},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_ideb_4s", :valor => 0.32},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_ideb_4s", :valor => 0.35},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_ideb_4s", :valor => 0.28},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_ideb_4s", :valor => 0.34},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_ideb_4s", :valor => 0.43},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_ideb_4s", :valor => 0.49},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_ideb_4s", :valor => 0.45},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_ideb_4s", :valor => 0.51},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_ideb_4s", :valor => 0.29},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_ideb_4s", :valor => 0.55},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_ideb_4s", :valor => 0.48},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_ideb_4s", :valor => 0.47},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_ideb_4s", :valor => 0.28},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_ideb_4s", :valor => 0.33},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_ideb_4s", :valor => 0.35},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_ideb_4s", :valor => 0.34},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_ideb_4s", :valor => 0.54},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_ideb_4s", :valor => 0.46},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_ideb_4s", :valor => 0.32},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_ideb_4s", :valor => 0.43},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_ideb_4s", :valor => 0.37},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_ideb_4s", :valor => 0.50},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_ideb_4s", :valor => 0.34},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_ideb_4s", :valor => 0.37},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_ideb_4s", :valor => 0.57},
+                     {:nome => "IDEB/recursos 5 ano", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_ideb_4s", :valor => 0.41}])
+
+
+
+Indicador.create([
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_ideb_8s", :valor => 0.22},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_ideb_8s", :valor => 0.19},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_ideb_8s", :valor => 0.23},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_ideb_8s", :valor => 0.23},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_ideb_8s", :valor => 0.18},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_ideb_8s", :valor => 0.25},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_ideb_8s", :valor => 0.28},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_ideb_8s", :valor => 0.27},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_ideb_8s", :valor => 0.30},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_ideb_8s", :valor => 0.19},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_ideb_8s", :valor => 0.33},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_ideb_8s", :valor => 0.25},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_ideb_8s", :valor => 0.27},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_ideb_8s", :valor => 0.20},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_ideb_8s", :valor => 0.21},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_ideb_8s", :valor => 0.23},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_ideb_8s", :valor => 0.23},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_ideb_8s", :valor => 0.38},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_ideb_8s", :valor => 0.31},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_ideb_8s", :valor => 0.21},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_ideb_8s", :valor => 0.24},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_ideb_8s", :valor => 0.21},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_ideb_8s", :valor => 0.34},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_ideb_8s", :valor => 0.31},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_ideb_8s", :valor => 0.19},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_ideb_8s", :valor => 0.33},
+                     {:nome => "IDEB/recursos 9 ano", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_ideb_8s", :valor => 0.22}])
+
+Indicador.create([
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "AC").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "AL").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "AM").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "AP").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "BA").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "CE").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "DF").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "ES").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "GO").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "MA").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "MG").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "MS").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "MT").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "PA").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "PB").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "PE").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "PI").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "PR").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "RJ").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "RN").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "RO").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "RR").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "RS").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "SC").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "SE").id, :categoria => "recursos_ideb_3m", :valor => 0.04},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "SP").id, :categoria => "recursos_ideb_3m", :valor => 0.05},
+                     {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_ideb_3m", :valor => 0.04}])
+
+
+

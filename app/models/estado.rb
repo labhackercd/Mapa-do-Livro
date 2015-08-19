@@ -8,4 +8,7 @@ class Estado
   field :has_circle, type: Boolean, default: false
   field :text_position, type: String
   field :circle_shape, type: String
+
+  has_many :indicadors
+
 end
