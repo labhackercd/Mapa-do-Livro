@@ -8,20 +8,306 @@
       $('.collection').fadeIn();
     }
 
-    $('.modal-trigger').click(function() {
-      alert('lol');
+    $(function () {
+    $('#container').highcharts({
+    chart: {
+    type: 'scatter',
+    zoomType: 'xy'
+    },
+    title: {
+    text: 'IDEB 2013 x recursos PNLD 2012'
+    },
+    subtitle: {
+    text: 'Ensino Fundamental'
+    },
+    xAxis: {
+    title: {
+    enabled: true,
+    text: 'Recurso do PNLD per capita (R$)'
+    },
+    startOnTick: true,
+    endOnTick: true,
+    showLastLabel: true
+    },
+    yAxis: {
+    title: {
+    text: 'Avaliação no IDEB'
+    }
+    },
+    legend: {
+    layout: 'vertical',
+    align: 'left',
+    verticalAlign: 'top',
+    x: 100,
+    y: 70,
+    floating: true,
+    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+    borderWidth: 1
+    },
+    plotOptions: {
+    scatter: {
+    marker: {
+    radius: 5,
+    states: {
+    hover: {
+    enabled: true,
+    lineColor: 'rgb(100,100,100)'
+    }
+    }
+    },
+    states: {
+    hover: {
+    marker: {
+    enabled: false
+    }
+    }
+    },
+    tooltip: {
+    headerFormat: '',
+    pointFormat: 'UF: <b>{point.label}</b> ({series.name})<br />Recurso médio por estudante: <b>R$ {point.x}</b><br />IDEB: <b>{point.y}</b>'
+    }
+    }
+    },
+    series: [{
+    name: '1ª a 4ª série',
+    color: 'rgba(223, 83, 83, .5)',
+    data: [{
+    "label": "AC",
+    "y": 5.1,
+    "x": 12.97
+    }, {
+    "label": "AL",
+    "y": 4.1,
+    "x": 12.89
+    }, {
+    "label": "AM",
+    "y": 4.7,
+    "x": 13.50
+    }, {
+    "label": "AP",
+    "y": 4,
+    "x": 14.27
+    }, {
+    "label": "BA",
+    "y": 4.3,
+    "x": 12.78
+    }, {
+    "label": "CE",
+    "y": 5.2,
+    "x": 12.05
+    }, {
+    "label": "DF",
+    "y": 5.9,
+    "x": 12.13
+    }, {
+    "label": "ES",
+    "y": 5.4,
+    "x": 11.88
+    }, {
+    "label": "GO",
+    "y": 5.7,
+    "x": 11.24
+    }, {
+    "label": "MA",
+    "y": 4.1,
+    "x": 13.91
+    }, {
+    "label": "MG",
+    "y": 6.1,
+    "x": 11.17
+    }, {
+    "label": "MS",
+    "y": 5.2,
+    "x": 10.76
+    }, {
+    "label": "MT",
+    "y": 5.3,
+    "x": 11.39
+    }, {
+    "label": "PA",
+    "y": 4,
+    "x": 14.10
+    }, {
+    "label": "PB",
+    "y": 4.5,
+    "x": 13.66
+    }, {
+    "label": "PE",
+    "y": 4.7,
+    "x": 13.33
+    }, {
+    "label": "PI",
+    "y": 4.5,
+    "x": 13.29
+    }, {
+    "label": "PR",
+    "y": 5.9,
+    "x": 11.01
+    }, {
+    "label": "RJ",
+    "y": 5.2,
+    "x": 11.22
+    }, {
+    "label": "RN",
+    "y": 4.4,
+    "x": 13.58
+    }, {
+    "label": "RO",
+    "y": 5.2,
+    "x": 12.01
+    }, {
+    "label": "RR",
+    "y": 5,
+    "x": 13.58
+    }, {
+    "label": "RS",
+    "y": 5.6,
+    "x": 11.19
+    }, {
+    "label": "SC",
+    "y": 6,
+    "x": 17.47
+    }, {
+    "label": "SE",
+    "y": 4.4,
+    "x": 11.79
+    }, {
+    "label": "SP",
+    "y": 6.1,
+    "x": 10.69
+    }, {
+    "label": "TO",
+    "y": 5.1,
+    "x": 12.59
+    }]
+
+    }, {
+    name: '5ª a 8ª série',
+    color: 'rgba(0, 83, 83, .5)',
+    data: [{
+    "label": "AC",
+    "y": 4.4,
+    "x": 19.61
+    }, {
+    "label": "AL",
+    "y": 3.1,
+    "x": 16.26
+    }, {
+    "label": "AM",
+    "y": 3.9,
+    "x": 17.21
+    }, {
+    "label": "AP",
+    "y": 3.6,
+    "x": 15.42
+    }, {
+    "label": "BA",
+    "y": 3.4,
+    "x": 18.63
+    }, {
+    "label": "CE",
+    "y": 4.4,
+    "x": 17.60
+    }, {
+    "label": "DF",
+    "y": 4.4,
+    "x": 15.58
+    }, {
+    "label": "ES",
+    "y": 4.2,
+    "x": 15.73
+    }, {
+    "label": "GO",
+    "y": 4.7,
+    "x": 15.43
+    }, {
+    "label": "MA",
+    "y": 3.6,
+    "x": 18.82
+    }, {
+    "label": "MG",
+    "y": 4.8,
+    "x": 14.72
+    }, {
+    "label": "MS",
+    "y": 4.1,
+    "x": 16.29
+    }, {
+    "label": "MT",
+    "y": 4.4,
+    "x": 16.24
+    }, {
+    "label": "PA",
+    "y": 3.6,
+    "x": 17.91
+    }, {
+    "label": "PB",
+    "y": 3.5,
+    "x": 16.41
+    }, {
+    "label": "PE",
+    "y": 3.8,
+    "x": 16.29
+    }, {
+    "label": "PI",
+    "y": 4,
+    "x": 17.26
+    }, {
+    "label": "PR",
+    "y": 4.3,
+    "x": 11.19
+    }, {
+    "label": "RJ",
+    "y": 4.3,
+    "x": 13.72
+    }, {
+    "label": "RN",
+    "y": 3.6,
+    "x": 16.92
+    }, {
+    "label": "RO",
+    "y": 3.9,
+    "x": 16.13
+    }, {
+    "label": "RR",
+    "y": 3.7,
+    "x": 17.40
+    }, {
+    "label": "RS",
+    "y": 4.2,
+    "x": 12.47
+    }, {
+    "label": "SC",
+    "y": 4.5,
+    "x": 14.38
+    }, {
+    "label": "SE",
+    "y": 3.2,
+    "x": 16.73
+    }, {
+    "label": "SP",
+    "y": 4.7,
+    "x": 14.33
+    }, {
+    "label": "TO",
+    "y": 3.9,
+    "x": 17.69
+    }]
+
+    }]
+    });
     });
 
 <% end %>
-<div class="main">
+<div class="main ">
   <div class="row">
+
     <div class="col s6">
       <div class="logo">
         <%= image_tag("logo.png", :alt => "logo") %>
       </div>
-      
+
       <svg id="svg-map" version="1.1" id="svg-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 450 460" enable-background="new 0 0 450 460" xml:space="preserve">
-        <foreignObject><a class="modal-trigger" href="#help"><i class="material-icons help">live_help</i></a></foreignObject>
         <g>
           <% Estado.each do |estado| %>
               <a onclick="show();">
@@ -35,47 +321,26 @@
           <% end %>
       </g>
     </svg>
-  </div>
-  <div class="col s6 info valign-wrapper">
-    <ul class="collection">
-      <li class="collection-item">
-        <h3>Nome do Estado</h3>
-      </li>
-      <li class="collection-item avatar">
-        <i class="material-icons circle">folder</i>
-        <span class="title">Title</span>
-        <p>First Line <br>
-           Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-      </li>
-      <li class="collection-item avatar">
-        <i class="material-icons circle green">insert_chart</i>
-        <span class="title">Title</span>
-        <p>First Line <br>
-           Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-      </li>
-      <li class="collection-item avatar">
-        <i class="material-icons circle red">play_arrow</i>
-        <span class="title">Title</span>
-        <p>First Line <br>
-           Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-      </li>
-  </ul>
-  </div>
-</div>
-</div>
 
-  <div id="help" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+         <svg id="svg-map" version="1.1" id="svg-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 450 460" enable-background="new 0 0 450 460" xml:space="preserve">
+           <g>
+             <% Estado.each do |estado| %>
+                 <a onclick="show();">
+                   <path fill="<%= darken_color("#4bdc84", Indicador.where(:categoria => "recursos_ideb_8s", :estado_id => estado.id).first.valor
+                                   )%>" stroke="#FFFFFF" stroke-width="1.0404" stroke-linecap="round" stroke-linejoin="round" d="<%=estado.shape_description%>""></path>
+                   <% if estado.has_circle %>
+                       <path class="circle" d="<%=estado.circle_shape%>"></path>
+                   <% end %>
+                   <text transform="<%= estado.text_position %>" fill="#FFFFFF"><%= estado.sigla %></text>
+                 </a>
+             <% end %>
+           </g>
+         </svg>
   </div>
+  </div>
+
+  <div class="row">
+    <div id="container" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+  </div>
+
+

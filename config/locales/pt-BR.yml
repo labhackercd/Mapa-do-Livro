@@ -202,4 +202,4 @@ pt-BR:
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
 
   app:
-    title: "Mapa do Livro no Brasil"
+    title: "Mapa do Programa Nacional do Livro Didático"
