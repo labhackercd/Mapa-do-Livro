@@ -39,16 +39,16 @@
           <span>Mostrando: </span><span class="sn">4ª Série do Ensino Fundamental</span>
           
           <!-- Dropdown Trigger -->
-          <a class='dropdown-button btn cyan' href='#' data-activates='serie_dropdown'>Série</a>
+          <a class='dropdown-button btn cyan' href='' data-activates='serie_dropdown'>Série</a>
 
           <!-- Dropdown Structure -->
           <ul id='serie_dropdown' class='dropdown-content'>
-            <li><a class="seriea" href="#!">4ª Série do Ensino Fundamental</a></li>
+            <li><a class="seriea" href="/dashboards/recursos-ideb-4s">4ª Série do Ensino Fundamental</a></li>
             <li class="divider"></li>
-            <li><a class="seriea" href="#!">8ª Série do Ensino Fundamental</a></li>
+            <li><a class="seriea" href="/dashboards/recursos-ideb-8s">8ª Série do Ensino Fundamental</a></li>
           </ul>
         </div>
-        <%= render 'pages/map' , recurso: "recursos_ideb_8s" %>
+        <%= render 'pages/map' , recurso: @dashboard.title %>
       </div>
   </div>
   <div class="col s6 info valign-wrapper">

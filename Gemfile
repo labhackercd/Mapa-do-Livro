@@ -33,8 +33,8 @@ gem 'font-awesome-sass', '~> 4.3.0'
 #Pry
 gem 'pry-rails'
 
-
-
+#Slug
+gem 'mongoid-slug'
 
 group :development, :test do
   gem 'byebug'

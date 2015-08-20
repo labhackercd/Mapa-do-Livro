@@ -1,0 +1,15 @@
+<svg id="svg-map" version="1.1" id="svg-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 450 460" enable-background="new 0 0 450 460" xml:space="preserve">
+    <foreignObject><a class="modal-trigger" href="#help"><i class="material-icons help">live_help</i></a></foreignObject>
+    <g>
+      <% Estado.each do |estado| %>
+          <a onclick="show();">
+            <path fill="<%= darken_color("#4bdc84", Indicador.where(:categoria => recurso, :estado_id => estado.id).first.valor
+)%>" stroke="#FFFFFF" stroke-width="1.0404" stroke-linecap="round" stroke-linejoin="round" d="<%=estado.shape_description%>""></path>
+            <% if estado.has_circle %>
+                <path class="circle" d="<%=estado.circle_shape%>"></path>
+            <% end %>
+            <text transform="<%= estado.text_position %>" fill="#FFFFFF"><%= estado.sigla %></text>
+          </a>
+      <% end %>
+  </g>
+</svg>

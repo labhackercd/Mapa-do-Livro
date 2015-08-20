@@ -32,13 +32,32 @@ body {
   margin-top: 50px;
 }
 
-#svg-map {
+.map {
   margin-top: 50px;
   position: relative;
-  .help {
+  .serie {
+    span {
+      font-size: 1.3em;
+      font-weight: bold;
+      opacity: .6;
+    }
+    .sn {
+      margin-right: 10px;
+    }
     position: absolute;
     top: 0;
     right: 0;
-    color: #3899cb;
+    a {
+      width: 150px;
+    }
+  }
+  #svg-map {
+    margin-top: 50px;
+    .help {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #3899cb;
+    }
   }
 }

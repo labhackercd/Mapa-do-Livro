@@ -606,4 +606,7 @@ Indicador.create([
                      {:nome => "IDEB/recursos 3 ano médio", :estado_id => Estado.find_by(:sigla => "TO").id, :categoria => "recursos_ideb_3m", :valor => 0.04}])
 
 
-
+Dashboard.create([
+  {:title => "recursos_ideb_8s"},
+  {:title => "recursos_ideb_4s"}
+  ])
