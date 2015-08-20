@@ -33,6 +33,8 @@ gem 'font-awesome-sass', '~> 4.3.0'
 #Pry
 gem 'pry-rails'
 
+gem "highcharts-rails"
+
 
 
 

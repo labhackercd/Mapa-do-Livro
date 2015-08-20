@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require materialize-sprockets
 //= require_tree .
-
+//= require highcharts
+//= require highcharts/modules/exporting
