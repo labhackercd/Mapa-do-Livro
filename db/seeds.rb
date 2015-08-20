@@ -607,6 +607,6 @@ Indicador.create([
 
 
 Dashboard.create([
-  {:title => "recursos_ideb_8s"},
-  {:title => "recursos_ideb_4s"}
+  {:title => "recursos_ideb_8s" , :description => "9º ano do ensino fundamental"},
+  {:title => "recursos_ideb_4s" , :description => "5º ano do ensino fundamental"}
   ])

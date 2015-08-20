@@ -4,5 +4,6 @@ class Dashboard
   include Mongoid::Slug
 
   field :title
+  field :description
   slug  :title, :history => true
 end
