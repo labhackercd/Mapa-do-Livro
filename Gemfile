@@ -35,8 +35,8 @@ gem 'pry-rails'
 
 gem "highcharts-rails"
 
-
-
+#Slug
+gem 'mongoid-slug'
 
 group :development, :test do
   gem 'byebug'
