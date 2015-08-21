@@ -12,7 +12,300 @@
       alert('lol');
     });
 
+
+    $(function () {
+    $('#container').highcharts({
+    chart: {
+    type: 'scatter',
+    zoomType: 'xy'
+    },
+    title: {
+    text: 'IDEB 2013 x recursos PNLD 2012'
+    },
+    subtitle: {
+    text: 'Ensino Fundamental'
+    },
+    xAxis: {
+    title: {
+    enabled: true,
+    text: 'Recurso do PNLD per capita (R$)'
+    },
+    startOnTick: true,
+    endOnTick: true,
+    showLastLabel: true
+    },
+    yAxis: {
+    title: {
+    text: 'Avaliação no IDEB'
+    }
+    },
+    legend: {
+    layout: 'vertical',
+    align: 'left',
+    verticalAlign: 'top',
+    x: 100,
+    y: 70,
+    floating: true,
+    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+    borderWidth: 1
+    },
+    plotOptions: {
+    scatter: {
+    marker: {
+    radius: 5,
+    states: {
+    hover: {
+    enabled: true,
+    lineColor: 'rgb(100,100,100)'
+    }
+    }
+    },
+    states: {
+    hover: {
+    marker: {
+    enabled: false
+    }
+    }
+    },
+    tooltip: {
+    headerFormat: '',
+    pointFormat: 'UF: <b>{point.label}</b> ({series.name})<br />Recurso médio por estudante: <b>R$ {point.x}</b><br />IDEB: <b>{point.y}</b>'
+    }
+    }
+    },
+    series: [{
+    name: '1ª a 4ª série',
+    color: 'rgba(223, 83, 83, .5)',
+    data: [{
+    "label": "AC",
+    "y": 5.1,
+    "x": 12.97
+    }, {
+    "label": "AL",
+    "y": 4.1,
+    "x": 12.89
+    }, {
+    "label": "AM",
+    "y": 4.7,
+    "x": 13.50
+    }, {
+    "label": "AP",
+    "y": 4,
+    "x": 14.27
+    }, {
+    "label": "BA",
+    "y": 4.3,
+    "x": 12.78
+    }, {
+    "label": "CE",
+    "y": 5.2,
+    "x": 12.05
+    }, {
+    "label": "DF",
+    "y": 5.9,
+    "x": 12.13
+    }, {
+    "label": "ES",
+    "y": 5.4,
+    "x": 11.88
+    }, {
+    "label": "GO",
+    "y": 5.7,
+    "x": 11.24
+    }, {
+    "label": "MA",
+    "y": 4.1,
+    "x": 13.91
+    }, {
+    "label": "MG",
+    "y": 6.1,
+    "x": 11.17
+    }, {
+    "label": "MS",
+    "y": 5.2,
+    "x": 10.76
+    }, {
+    "label": "MT",
+    "y": 5.3,
+    "x": 11.39
+    }, {
+    "label": "PA",
+    "y": 4,
+    "x": 14.10
+    }, {
+    "label": "PB",
+    "y": 4.5,
+    "x": 13.66
+    }, {
+    "label": "PE",
+    "y": 4.7,
+    "x": 13.33
+    }, {
+    "label": "PI",
+    "y": 4.5,
+    "x": 13.29
+    }, {
+    "label": "PR",
+    "y": 5.9,
+    "x": 11.01
+    }, {
+    "label": "RJ",
+    "y": 5.2,
+    "x": 11.22
+    }, {
+    "label": "RN",
+    "y": 4.4,
+    "x": 13.58
+    }, {
+    "label": "RO",
+    "y": 5.2,
+    "x": 12.01
+    }, {
+    "label": "RR",
+    "y": 5,
+    "x": 13.58
+    }, {
+    "label": "RS",
+    "y": 5.6,
+    "x": 11.19
+    }, {
+    "label": "SC",
+    "y": 6,
+    "x": 17.47
+    }, {
+    "label": "SE",
+    "y": 4.4,
+    "x": 11.79
+    }, {
+    "label": "SP",
+    "y": 6.1,
+    "x": 10.69
+    }, {
+    "label": "TO",
+    "y": 5.1,
+    "x": 12.59
+    }]
+
+    }, {
+    name: '5ª a 8ª série',
+    color: 'rgba(0, 83, 83, .5)',
+    data: [{
+    "label": "AC",
+    "y": 4.4,
+    "x": 19.61
+    }, {
+    "label": "AL",
+    "y": 3.1,
+    "x": 16.26
+    }, {
+    "label": "AM",
+    "y": 3.9,
+    "x": 17.21
+    }, {
+    "label": "AP",
+    "y": 3.6,
+    "x": 15.42
+    }, {
+    "label": "BA",
+    "y": 3.4,
+    "x": 18.63
+    }, {
+    "label": "CE",
+    "y": 4.4,
+    "x": 17.60
+    }, {
+    "label": "DF",
+    "y": 4.4,
+    "x": 15.58
+    }, {
+    "label": "ES",
+    "y": 4.2,
+    "x": 15.73
+    }, {
+    "label": "GO",
+    "y": 4.7,
+    "x": 15.43
+    }, {
+    "label": "MA",
+    "y": 3.6,
+    "x": 18.82
+    }, {
+    "label": "MG",
+    "y": 4.8,
+    "x": 14.72
+    }, {
+    "label": "MS",
+    "y": 4.1,
+    "x": 16.29
+    }, {
+    "label": "MT",
+    "y": 4.4,
+    "x": 16.24
+    }, {
+    "label": "PA",
+    "y": 3.6,
+    "x": 17.91
+    }, {
+    "label": "PB",
+    "y": 3.5,
+    "x": 16.41
+    }, {
+    "label": "PE",
+    "y": 3.8,
+    "x": 16.29
+    }, {
+    "label": "PI",
+    "y": 4,
+    "x": 17.26
+    }, {
+    "label": "PR",
+    "y": 4.3,
+    "x": 11.19
+    }, {
+    "label": "RJ",
+    "y": 4.3,
+    "x": 13.72
+    }, {
+    "label": "RN",
+    "y": 3.6,
+    "x": 16.92
+    }, {
+    "label": "RO",
+    "y": 3.9,
+    "x": 16.13
+    }, {
+    "label": "RR",
+    "y": 3.7,
+    "x": 17.40
+    }, {
+    "label": "RS",
+    "y": 4.2,
+    "x": 12.47
+    }, {
+    "label": "SC",
+    "y": 4.5,
+    "x": 14.38
+    }, {
+    "label": "SE",
+    "y": 3.2,
+    "x": 16.73
+    }, {
+    "label": "SP",
+    "y": 4.7,
+    "x": 14.33
+    }, {
+    "label": "TO",
+    "y": 3.9,
+    "x": 17.69
+    }]
+
+    }]
+    });
+    });
+
+
     $(function() {
+
       $('.dropdown-button').dropdown({
           inDuration: 300,
           outDuration: 225,
@@ -49,6 +342,9 @@
           </ul>
         </div>
         <%= render 'layouts/map' , recurso: @dashboard.title %>
+        <div class="row">
+          <div id="container" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+        </div>
       </div>
   </div>
   <div class="col s6 info valign-wrapper">
@@ -94,3 +390,4 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
+
